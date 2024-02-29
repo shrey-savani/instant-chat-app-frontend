@@ -9,7 +9,7 @@ import closeIcon from "../Images/closeIcon.png";
 
 let socket;
 const Chat = () => {
-    let EndPoint = 'http://localhost:3500/';
+    let EndPoint = 'https://instant-chat-app.onrender.com/';
 
     const [id, setId] = useState("");
     const [messages, setMessages] = useState([]);
@@ -31,17 +31,17 @@ const Chat = () => {
 
         socket.on('welcome', (data) => {
             setMessages([...messages, data]);
-            console.log(data.user, data.message);
+            // console.log(data.user, data.message);
         })
 
         socket.on('userJoined', (data) => {
             setMessages([...messages, data]);
-            console.log(data.user, data.message);
+            // console.log(data.user, data.message);
         })
 
         socket.on('leave', (data) => {
             setMessages([...messages, data]);
-            console.log(data.user, data.message);
+            // console.log(data.user, data.message);
         })
 
         return () => {
@@ -58,7 +58,6 @@ const Chat = () => {
             socket.off();
         }
     }, [messages]);
-    console.log("--",messages);
 
     return (
         <div className="chatPage">
