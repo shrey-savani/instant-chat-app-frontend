@@ -57,7 +57,7 @@ const Chat = () => {
         return () => {
             socket.off();
         }
-    }, []);
+    }, [messages]);
 
     return (
         <div className="chatPage">
