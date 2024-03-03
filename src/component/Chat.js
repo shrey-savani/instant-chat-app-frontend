@@ -48,7 +48,7 @@ const Chat = () => {
             socket.disconnect();
             socket.off();
         };
-    }, [EndPoint, ])
+    }, [])
 
     useEffect(() => {
         socket.on('sendMessage', (data) => {
@@ -57,7 +57,7 @@ const Chat = () => {
         return () => {
             socket.off();
         }
-    }, [messages, setMessages, user, setId]);
+    }, []);
 
     return (
         <div className="chatPage">
