@@ -2,7 +2,7 @@
 Welcome to the Instant Chat App, a real-time chat application created with React and Socket.IO. This app enables users to seamlessly join chat rooms, exchange messages, and engage in live conversations.
 
 ## App Live:
-site: https://instant-chat-app-frontend.vercel.app/chat
+Website Link: https://instant-chat-app-frontend.vercel.app/chat
 
 ## Key Features
 Instant Communication: Harnessing the power of Socket.IO for swift and bidirectional real-time communication.
